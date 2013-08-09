@@ -1,0 +1,8 @@
+<suite name="Same TestCases on Different Browser" >  
+<test name="Run on Firefox">
+<parameter name="browser"  value="firefox"/>
+<classes>
+<class name="com.testcases.TestCase1"/>
+</classes>
+</test> 
+</suite>

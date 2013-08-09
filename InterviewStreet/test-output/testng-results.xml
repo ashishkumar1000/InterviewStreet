@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="15" failed="1" total="18" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Same TestCases on Different Browser" duration-ms="217985" started-at="2013-08-05T15:01:59Z" finished-at="2013-08-05T15:05:37Z">
+    <groups>
+    </groups>
+    <test name="Run on Firefox" duration-ms="215938" started-at="2013-08-05T15:01:59Z" finished-at="2013-08-05T15:05:35Z">
+      <class name="com.testcases.TestCase1">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.testcases.TestCase1@10564f7]" name="init" is-config="true" duration-ms="50188" started-at="2013-08-05T20:31:59Z" finished-at="2013-08-05T20:32:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:com.testcases.TestCase1@10564f7]" name="testCase1" duration-ms="23375" started-at="2013-08-05T20:32:49Z" finished-at="2013-08-05T20:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="testCase2()[pri:0, instance:com.testcases.TestCase1@10564f7]" name="testCase2" duration-ms="6516" started-at="2013-08-05T20:33:13Z" depends-on-methods="com.testcases.TestCase1.testCase1" finished-at="2013-08-05T20:33:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="FAIL" signature="testCase3()[pri:0, instance:com.testcases.TestCase1@10564f7]" name="testCase3" duration-ms="135547" started-at="2013-08-05T20:33:19Z" depends-on-methods="com.testcases.TestCase1.testCase2" finished-at="2013-08-05T20:35:35Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"tag name","selector":"iframe"}
+Command duration or timeout: 120.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_25'
+Session ID: 415dce2e-e4db-4829-aba3-080d7d8607bb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=22.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"tag name","selector":"iframe"}
+Command duration or timeout: 120.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_25'
+Session ID: 415dce2e-e4db-4829-aba3-080d7d8607bb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=22.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:320)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at com.pageClass.ProgrammeStatementPageStep1.enterProblemStatement(ProgrammeStatementPageStep1.java:51)
+	at com.testcases.TestCase1.testCase3(TestCase1.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"tag name","selector":"iframe"}
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/DOCUME~1/A1/LOCALS~1/Temp/anonymous9191224969188045086webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8444)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/DOCUME~1/A1/LOCALS~1/Temp/anonymous9191224969188045086webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:386)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method status="SKIP" signature="testCase4()[pri:0, instance:com.testcases.TestCase1@10564f7]" name="testCase4" duration-ms="0" started-at="2013-08-05T20:35:35Z" depends-on-methods="com.testcases.TestCase1.testCase3" finished-at="2013-08-05T20:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase4 -->
+        <test-method status="PASS" signature="done()[pri:0, instance:com.testcases.TestCase1@10564f7]" name="done" is-config="true" duration-ms="0" started-at="2013-08-05T20:35:35Z" finished-at="2013-08-05T20:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="SKIP" signature="testCase5()[pri:0, instance:com.testcases.TestCase1@10564f7]" name="testCase5" duration-ms="0" started-at="2013-08-05T20:35:35Z" depends-on-methods="com.testcases.TestCase1.testCase4" finished-at="2013-08-05T20:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase5 -->
+        <test-method status="SKIP" signature="testCase6()[pri:0, instance:com.testcases.TestCase1@10564f7]" name="testCase6" duration-ms="0" started-at="2013-08-05T20:35:35Z" depends-on-methods="com.testcases.TestCase1.testCase5" finished-at="2013-08-05T20:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase6 -->
+      </class> <!-- com.testcases.TestCase1 -->
+    </test> <!-- Run on Firefox -->
+    <test name="Run on chrome" duration-ms="328" started-at="2013-08-05T15:05:36Z" finished-at="2013-08-05T15:05:36Z">
+      <class name="com.testcases.TestCase1">
+        <test-method status="FAIL" signature="init(java.lang.String)[pri:0, instance:com.testcases.TestCase1@3252d6]" name="init" is-config="true" duration-ms="0" started-at="2013-08-05T20:35:36Z" finished-at="2013-08-05T20:35:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: D:\eclipse\workspace\InterviewStreet\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\eclipse\workspace\InterviewStreet\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:176)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)
+	at com.testcases.TestCase1.init(TestCase1.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="testCase2()[pri:0, instance:com.testcases.TestCase1@3252d6]" name="testCase2" duration-ms="0" started-at="2013-08-05T20:35:36Z" depends-on-methods="com.testcases.TestCase1.testCase1" finished-at="2013-08-05T20:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="SKIP" signature="testCase1()[pri:0, instance:com.testcases.TestCase1@3252d6]" name="testCase1" duration-ms="0" started-at="2013-08-05T20:35:36Z" finished-at="2013-08-05T20:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="SKIP" signature="testCase5()[pri:0, instance:com.testcases.TestCase1@3252d6]" name="testCase5" duration-ms="0" started-at="2013-08-05T20:35:36Z" depends-on-methods="com.testcases.TestCase1.testCase4" finished-at="2013-08-05T20:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase5 -->
+        <test-method status="SKIP" signature="testCase6()[pri:0, instance:com.testcases.TestCase1@3252d6]" name="testCase6" duration-ms="0" started-at="2013-08-05T20:35:36Z" depends-on-methods="com.testcases.TestCase1.testCase5" finished-at="2013-08-05T20:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase6 -->
+        <test-method status="SKIP" signature="testCase3()[pri:0, instance:com.testcases.TestCase1@3252d6]" name="testCase3" duration-ms="0" started-at="2013-08-05T20:35:36Z" depends-on-methods="com.testcases.TestCase1.testCase2" finished-at="2013-08-05T20:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method status="SKIP" signature="done()[pri:0, instance:com.testcases.TestCase1@3252d6]" name="done" is-config="true" duration-ms="0" started-at="2013-08-05T20:35:36Z" finished-at="2013-08-05T20:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="SKIP" signature="testCase4()[pri:0, instance:com.testcases.TestCase1@3252d6]" name="testCase4" duration-ms="0" started-at="2013-08-05T20:35:36Z" depends-on-methods="com.testcases.TestCase1.testCase3" finished-at="2013-08-05T20:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase4 -->
+      </class> <!-- com.testcases.TestCase1 -->
+    </test> <!-- Run on chrome -->
+    <test name="Run on internet explorer" duration-ms="281" started-at="2013-08-05T15:05:37Z" finished-at="2013-08-05T15:05:37Z">
+      <class name="com.testcases.TestCase1">
+        <test-method status="FAIL" signature="init(java.lang.String)[pri:0, instance:com.testcases.TestCase1@135f92f]" name="init" is-config="true" duration-ms="0" started-at="2013-08-05T20:35:37Z" finished-at="2013-08-05T20:35:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iexplorer]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.ie.driver system property; for more information, see http://code.google.com/p/selenium/wiki/InternetExplorerDriver. The latest version can be downloaded from http://code.google.com/p/selenium/downloads/list]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.ie.driver system property; for more information, see http://code.google.com/p/selenium/wiki/InternetExplorerDriver. The latest version can be downloaded from http://code.google.com/p/selenium/downloads/list
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:176)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:105)
+	at org.openqa.selenium.ie.InternetExplorerDriverService.access$1(InternetExplorerDriverService.java:1)
+	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.build(InternetExplorerDriverService.java:265)
+	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:267)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:172)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:143)
+	at com.testcases.TestCase1.init(TestCase1.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="done()[pri:0, instance:com.testcases.TestCase1@135f92f]" name="done" is-config="true" duration-ms="0" started-at="2013-08-05T20:35:37Z" finished-at="2013-08-05T20:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="SKIP" signature="testCase5()[pri:0, instance:com.testcases.TestCase1@135f92f]" name="testCase5" duration-ms="0" started-at="2013-08-05T20:35:37Z" depends-on-methods="com.testcases.TestCase1.testCase4" finished-at="2013-08-05T20:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase5 -->
+        <test-method status="SKIP" signature="testCase4()[pri:0, instance:com.testcases.TestCase1@135f92f]" name="testCase4" duration-ms="0" started-at="2013-08-05T20:35:37Z" depends-on-methods="com.testcases.TestCase1.testCase3" finished-at="2013-08-05T20:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase4 -->
+        <test-method status="SKIP" signature="testCase3()[pri:0, instance:com.testcases.TestCase1@135f92f]" name="testCase3" duration-ms="0" started-at="2013-08-05T20:35:37Z" depends-on-methods="com.testcases.TestCase1.testCase2" finished-at="2013-08-05T20:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method status="SKIP" signature="testCase2()[pri:0, instance:com.testcases.TestCase1@135f92f]" name="testCase2" duration-ms="0" started-at="2013-08-05T20:35:37Z" depends-on-methods="com.testcases.TestCase1.testCase1" finished-at="2013-08-05T20:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="SKIP" signature="testCase6()[pri:0, instance:com.testcases.TestCase1@135f92f]" name="testCase6" duration-ms="0" started-at="2013-08-05T20:35:37Z" depends-on-methods="com.testcases.TestCase1.testCase5" finished-at="2013-08-05T20:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase6 -->
+        <test-method status="SKIP" signature="testCase1()[pri:0, instance:com.testcases.TestCase1@135f92f]" name="testCase1" duration-ms="0" started-at="2013-08-05T20:35:37Z" finished-at="2013-08-05T20:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+      </class> <!-- com.testcases.TestCase1 -->
+    </test> <!-- Run on internet explorer -->
+  </suite> <!-- Same TestCases on Different Browser -->
+</testng-results>

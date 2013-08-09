@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Same TestCases on Different Browser]">
+  <parameter name="browser" value="iexplorer"/>
+  <test name="Run on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.testcases.TestCase1">
+        <methods>
+          <include name="testCase3"/>
+          <include name="testCase5"/>
+          <include name="testCase2"/>
+          <include name="init"/>
+          <include name="init"/>
+          <include name="init"/>
+          <include name="done"/>
+          <include name="testCase6"/>
+          <include name="testCase4"/>
+          <include name="testCase1"/>
+        </methods>
+      </class> <!-- com.testcases.TestCase1 -->
+    </classes>
+  </test> <!-- Run on Firefox(failed) -->
+  <test name="Run on chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.testcases.TestCase1">
+        <methods>
+          <include name="testCase3"/>
+          <include name="testCase5"/>
+          <include name="testCase2"/>
+          <include name="init"/>
+          <include name="init"/>
+          <include name="init"/>
+          <include name="done"/>
+          <include name="testCase6"/>
+          <include name="testCase4"/>
+          <include name="testCase1"/>
+        </methods>
+      </class> <!-- com.testcases.TestCase1 -->
+    </classes>
+  </test> <!-- Run on chrome(failed) -->
+  <test name="Run on internet explorer(failed)">
+    <parameter name="browser" value="iexplorer"/>
+    <classes>
+      <class name="com.testcases.TestCase1">
+        <methods>
+          <include name="testCase3"/>
+          <include name="testCase5"/>
+          <include name="testCase2"/>
+          <include name="init"/>
+          <include name="init"/>
+          <include name="init"/>
+          <include name="done"/>
+          <include name="testCase6"/>
+          <include name="testCase4"/>
+          <include name="testCase1"/>
+        </methods>
+      </class> <!-- com.testcases.TestCase1 -->
+    </classes>
+  </test> <!-- Run on internet explorer(failed) -->
+</suite> <!-- Failed suite [Same TestCases on Different Browser] -->
